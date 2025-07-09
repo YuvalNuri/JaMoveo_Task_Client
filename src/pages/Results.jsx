@@ -55,7 +55,7 @@ useEffect(() => {
                 {results.map((song, idx) => (
                     <div key={idx} className="song-card horizontal" onClick={() => handleSongSelect(song)}>
                         <img
-                            src={song.img ?? '/src/assets/default-song-cover.jpg'}
+                            src={song.img ?? 'https://images.pexels.com/photos/2746823/pexels-photo-2746823.jpeg'}
                             alt="Song cover"
                             className="song-image"
                         />
