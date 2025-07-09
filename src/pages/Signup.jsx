@@ -18,7 +18,7 @@ export default function Signup() {
   });
 
   useEffect(() => {
-    fetch(local + "api/Instruments/AllInstruments", {
+    fetch(server + "api/Instruments/AllInstruments", {
       method: "GET",
       headers: {
         "Content-Type": "application/json; charset=UTF-8",
@@ -62,7 +62,7 @@ export default function Signup() {
     console.log(form);
     console.log(payload);
 
-    await fetch(local + "api/Auth/Register", {
+    await fetch(server + "api/Auth/Register", {
       method: "POST",
       body: JSON.stringify(payload),
       headers: {

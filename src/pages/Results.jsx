@@ -16,7 +16,7 @@ export default function Results() {
     useEffect(() => {
         console.log('search for', query);
 
-        fetch(local + "api/Admin/songs?query=" + query, {
+        fetch(server + "api/Admin/songs?query=" + query, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json; charset=UTF-8",

@@ -8,7 +8,6 @@ import { useSocket } from '../context/SocketContext';
 
 export default function MainPlayer() {
     const navigate = useNavigate();
-    const { local, server } = useContext(ApiContext);
     const { selectedSong } = useSocket();
 
     useEffect(() => {

@@ -29,7 +29,7 @@ export function AuthProvider({ children }) {
     };
 
     const loginWithCredentials = async ({ username, password }) => {
-        const res = await fetch(local + "api/Auth/Login", {
+        const res = await fetch(server + "api/Auth/Login", {
             method: "POST",
             body: JSON.stringify({ username, password }),
             headers: {

@@ -12,7 +12,7 @@ export const SocketProvider = ({ children }) => {
 
     useEffect(() => {
         const conn = new signalR.HubConnectionBuilder()
-            .withUrl(local + "rehearsalHub")
+            .withUrl(server + "rehearsalHub")
             .build();
 
         conn.start().then(() => console.log("Connected to hub"));

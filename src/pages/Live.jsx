@@ -87,7 +87,7 @@ export default function Live() {
     useEffect(() => {
         if (!song?.fileName) return;
 
-        fetch(`${local}api/Admin/song?fileName=${encodeURIComponent(song.fileName)}`)
+        fetch(`${server}api/Admin/song?fileName=${encodeURIComponent(song.fileName)}`)
             .then(res => res.json())
             .then(data => setLyricsData(data))
             .catch(err => console.error(err));
