@@ -10,7 +10,7 @@ import { ApiContext } from "../context/ApiContext";
 import '../styles/live.css';
 
 export default function Live() {
-    const { local } = useContext(ApiContext);
+    const { local , server} = useContext(ApiContext);
     const { state } = useLocation();
     const { selectedSong, resetSelectedSong, connection } = useSocket();
     const song = state?.song || selectedSong;
