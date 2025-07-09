@@ -142,7 +142,7 @@ export default function Signup() {
           styles={ { container: base => ({ ...base, margin: "0.5rem 0" })}}
         />
 
-        <button type="submit" style={{ margin: 15 }}>Finish</button>
+        <button className='special-btn' type="submit" style={{ margin: 15 }}>Finish</button>
       </form>
 
       <p style={{ marginTop: 20 }}>
