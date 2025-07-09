@@ -12,7 +12,10 @@ export const SocketProvider = ({ children }) => {
 
     useEffect(() => {
         const conn = new signalR.HubConnectionBuilder()
-            .withUrl(server + "rehearsalHub")
+            .withUrl(server + "rehearsalHub", {
+                withCredentials: true
+            })
+            .configureLogging(signalR.LogLevel.Information)
             .build();
 
         conn.start().then(() => console.log("Connected to hub"));
@@ -26,7 +29,7 @@ export const SocketProvider = ({ children }) => {
         conn.on("SessionQuit", () => {
             console.log("Received SessionQuit");
             setSessionQuit(true);
-            setSelectedSong(null); 
+            setSelectedSong(null);
         });
 
         return () => {
