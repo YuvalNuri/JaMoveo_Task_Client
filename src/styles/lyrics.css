@@ -1,0 +1,36 @@
+.lyrics-container {
+  max-height: 35vh;
+  margin-bottom: 5px;;
+  overflow-y: auto;
+  width: 95%;
+border: 1px solid rgba(118, 75, 162, 0.1);
+  border-radius: 8px;
+}
+
+.line {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 1rem;
+  justify-content: start;
+}
+
+.word-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 0.2rem;
+  min-width: 5ch; 
+}
+
+.chord {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: blue;
+  line-height: 1;
+  min-height: 1em;
+}
+
+.lyrics {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}

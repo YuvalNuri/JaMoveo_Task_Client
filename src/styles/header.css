@@ -1,0 +1,37 @@
+.user-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+    border-bottom: 2px solid rgba(118, 75, 162, 0.5);
+    padding-bottom: 1rem;
+}
+
+.user-actions .hello {
+    font-weight: 500;
+    color: #333;
+}
+
+.user-actions .divider {
+    color: #ccc;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.user-actions .logout-btn {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    color: #764ba2;
+    cursor: pointer;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.user-actions .logout-btn:hover {
+    color: #667eea;
+    text-decoration: underline;
+}

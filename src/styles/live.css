@@ -1,0 +1,54 @@
+.live-container {
+  max-height: 60vh;
+  width: 100%;
+  justify-items: center;
+  overflow: hidden;
+}
+
+.live-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.quit-row {
+  margin-bottom: 0.5rem;
+}
+
+.lyricsnchords-container{
+  width: 100%;
+}
+
+.scroll-controls {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.scroll-controls.vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.scroll-controls button {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.scroll-controls button:hover {
+  background: #f5f5f5;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.scroll-controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

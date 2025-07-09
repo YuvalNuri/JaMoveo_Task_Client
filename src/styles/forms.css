@@ -1,0 +1,40 @@
+.form-container{
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+  box-sizing: border-box;
+    background: rgba(102, 126, 234, 0.1);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.react-select__control {
+  border-color: #cbd5e1;
+  border-radius: 4px;
+  min-height: 42px;
+}
+
+.react-select__control--is-focused {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.react-select__placeholder,
+.react-select__input,
+.react-select__single-value {
+  font-size: 1rem;
+  line-height: 1.35;
+}
